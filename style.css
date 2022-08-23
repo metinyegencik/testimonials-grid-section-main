@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+body{
+    background-color: hsl(210, 46%, 95%);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 13px;
+}
+.container{
+    max-width: 1200px;
+    margin: 100px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.card{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 30px;
+    color:hsl(0, 0%, 100%) ;
+    align-items: center;
+    margin-right: 5px;
+    line-height: 1.4;
+}
+
+.card1{
+    background-color:hsl(263, 55%, 52%);
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: top 10px right 100px;
+}
+.card2{
+    background-color: hsl(217, 19%, 35%);
+}
+.card3{
+    background-color:hsl(0, 0%, 100%);
+    color: hsl(217, 19%, 35%);
+}
+.card4{
+    background-color: hsl(219, 29%, 14%);
+}
+
+.card5{
+    background-color:hsl(0, 0%, 100%);
+    color: hsl(217, 19%, 35%);
+}
+
+.card-img-header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.card-img-header img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 5px;
+    border: 1px solid hsl(263, 55%, 52%);
+}
+.cardlead{
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.carddesk{
+    font-weight: 500;
+    opacity: 70%;
+}
+.card:nth-of-type(1){
+    grid-column: 1/span 2;
+}
+.card:nth-of-type(5){
+    grid-column: 4;
+    grid-row: 1/ span 2;
+}
+.card:nth-of-type(4){
+    grid-column: 2/ 4;
+    grid-row: 2;
+}
+
+.name p{
+    opacity: 70%;
+}
+
+@media(max-width:890px) {
+    .container{
+        grid-template-columns: 1fr;
+    }
+    .card:nth-of-type(1){
+        grid-column: 1;
+    }
+    .card:nth-of-type(5){
+        grid-column: 1;
+        grid-row: 5;
+    }
+    .card:nth-of-type(4){
+        grid-column: 1;
+        grid-row: 4;
+    }
+    
+
+}
