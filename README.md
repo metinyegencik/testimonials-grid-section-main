@@ -6,4 +6,5 @@
 
 Thanks for checking out this front-end coding challenge.
 
+Çalışmanın live'ını görmek için tıklayın: https://metinyegencik.github.io/testimonials-grid-section-main/
 
